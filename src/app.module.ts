@@ -11,7 +11,7 @@ console.log(__dirname+ '../my_app/', 'build');
 @Module({ 
   imports: [ ServeStaticModule.forRoot({
     rootPath: join(__dirname, '..', 'build'),
-    exclude:['*']
+    exclude:['/data/*']
   }),],
   controllers: [AppController],
   providers: [AppService,{
